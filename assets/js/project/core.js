@@ -5,7 +5,7 @@ document.addEventListener('alpine:init', () => {
   Alpine.data('broke', () => ({
     isDark: localStorage.getItem("color-theme") === "dark" || (window.matchMedia("(prefers-color-scheme: dark)").matches && !localStorage.getItem("color-theme")),
     isNavbarActive: false,
-    activeTab: null,
+    activeTab: 0,
     isTabListenerMounted: false,
     isHamburgerListenerMounted: false,
     isThemeSwitcherListenerMounted: false,
