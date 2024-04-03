@@ -16,6 +16,25 @@ Broke Bricks comes packed with features that make it a powerhouse for web develo
 - **Disable "bricksJS" on the Frontend**: Gain more control by disabling "bricksJS" when using libraries like Alpine or HTMX. 🔌
 - **Toggle Elements On/Off**: Effortlessly manage which elements appear in the Bricks builder. 🎛️
 - **Timber/Twig Integration**: Access Timber and Twig within the Bricks editor or from the theme level for unprecedented control and flexibility. 🌲
+- **Cwicly Migration Mode**: A new admin setting option that brings in Cwicly's CSS/JS, enhancing the experience when using Tailwind Mode. Recommended for seamlessly transferring components from Cwicly to Bricks. 🔄
+
+### Cwicly Migration Mode
+
+Utilize "Cwicly Migration Mode" in conjunction with the Bricksbender plugin to easily migrate your components from Cwicly into Bricks. Follow these steps for a smooth transition:
+
+1. On your Cwicly site, disable all performance plugins.
+2. Navigate to the page you wish to convert, and open it on the frontend.
+3. Use the inspector to copy the section/component from the DOM.
+4. Use Bricksbender to paste it into Bricks.
+
+#### Caveats
+
+- Dynamic components will need to be set to dynamic.
+- Post-specific styling, such as on dynamic items, will not be applied. Consider adding a Tailwind grid/flex layout to the element.
+- Remove any additional dynamic items, ensuring only 1 item is repeating in the query.
+- Any other post-specific styling required will either need to be switched to Tailwind, or you can copy over the styling into the child theme and enqueue it.
+
+[Read the Cwicly Bricks Migration Guide](#) for more detailed information.
 
 ### Timber/Twig Integration Highlights
 
