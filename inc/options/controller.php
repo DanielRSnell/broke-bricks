@@ -24,8 +24,24 @@ function crb_attach_theme_options()
     $container->add_tab(__('Features', 'broke-bricks'), array(
         Field::make('html', 'crb_features_info')
             ->set_html('<p>Configure feature settings below.</p>'),
+
+        // Tailwind Mode Option
+        Field::make('separator', 'crb_tailwind_mode_divider'),
+        Field::make('html', 'crb_tailwind_mode_html')
+            ->set_html('<p>Enable Tailwind CSS mode to remove all default Bricks styling, optimizing for Tailwind CSS.</p>'),
         Field::make('checkbox', 'crb_tailwind_mode', __('Tailwind Mode', 'broke-bricks')),
+
+        // Remove Bricks JS Option
+        Field::make('separator', 'crb_bricks_js_divider'),
+        Field::make('html', 'crb_bricks_js_html')
+            ->set_html('<p>Remove the default Bricks JavaScript from the frontend for enhanced performance and custom JS solutions.</p>'),
         Field::make('checkbox', 'crb_bricks_js', __('Remove Bricks JS', 'broke-bricks')),
+
+        // Cwicly Migration Option
+        Field::make('separator', 'crb_cwicly_divider'),
+        Field::make('html', 'crb_cwicly_html')
+            ->set_html('<p>Enable Cwicly migration mode to assist in transitioning projects from Cwicly to Bricks.</p>'),
+        Field::make('checkbox', 'crb_cwicly', __('Cwicly Migration', 'broke-bricks')),
     ));
 
     // Elements Tab with individual checkboxes for each element
