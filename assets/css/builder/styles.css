@@ -1,0 +1,5 @@
+:where(.brx-draggable.brx-empty),
+:where(.brx-draggable:empty) {
+  min-height: 0px !important;
+  min-width: 0px !important;
+}

@@ -1,0 +1,11 @@
+{
+    "require": {
+        "htmlburger/carbon-fields": "^3.6",
+        "timber/timber": "^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

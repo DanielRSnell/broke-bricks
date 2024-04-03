@@ -1,0 +1,24 @@
+<!-- Your Code Snippet -->
+<style>
+  pre {
+    max-height: {{ maxheight ? maxheight : 400 }}px;
+    overflow-y: auto; /* Enables vertical scrolling if necessary */
+    overflow-x: hidden; /* Enables horizontal scrolling if necessary */
+    max-width: 100%; /* Ensures that the preformatted text is responsive */
+    white-space: pre-wrap; /* Wraps long lines to prevent horizontal overflow */
+    word-wrap: break-word; /* Breaks long words to prevent overflow */
+    background-color: #f5f5f5; /* Optional: background color for better visibility */
+    padding: 10px; /* Optional: some padding for aesthetics */
+    border: 1px solid #ccc; /* Optional: adds a border around the preformatted text */
+    border-radius: 4px; /* Optional: rounds the corners of the border */
+    background: black;
+  }
+</style>
+<pre
+  class="language-json"
+><code>{{ function('json_encode', state, constant('JSON_PRETTY_PRINT')) | escape('html') }}</code></pre>
+
+<script>
+  // Manually trigger highlighting after the page has loaded
+  Prism.highlightAll();
+</script>

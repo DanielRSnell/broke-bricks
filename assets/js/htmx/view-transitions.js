@@ -1,0 +1,1 @@
+htmx.config.globalViewTransitions = true;
