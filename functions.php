@@ -36,6 +36,7 @@ class BrokeTheme
         require $this->INC_DIR . '/options/controller.php';
         require $this->INC_DIR . '/timber/controller.php';
         require $this->ASSET_DIR . 'js/controller.php';
+
     }
 
     public function enqueue_scripts()

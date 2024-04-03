@@ -6,7 +6,7 @@ function bl_setup_query_controls($control_options)
 {
 
     /* Adding a new option in the dropdown */
-    $control_options['queryTypes']['my_new_query_type'] = esc_html__('My new WP Query');
+    $control_options['queryTypes']['my_new_query_type'] = esc_html__('Broke Example Query');
 
     return $control_options;
 
